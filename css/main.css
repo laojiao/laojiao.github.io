@@ -503,7 +503,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .g-plusone{
-    float: right;
+    right: 10%;
 }
 
 .content_header{
