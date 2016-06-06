@@ -212,8 +212,8 @@ h5, h6          { font-weight: bolder }
         background-position: -31px 0;
     }
 
-    header ul.social li a.behance,
-    header ul.social li a.behance:hover{
+    header ul.social li a.weibo,
+    header ul.social li a.weibo:hover{
         background-position: -62px 0;
     }
 
@@ -222,8 +222,8 @@ h5, h6          { font-weight: bolder }
         background-position: -93px 0;
     }
 
-    header ul.social li a.dribble,
-    header ul.social li a.dribble:hover{
+    header ul.social li a.tumblr,
+    header ul.social li a.tumblr:hover{
         background-position: -124px 0;
     }
 
