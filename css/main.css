@@ -501,7 +501,7 @@ h5, h6          { font-weight: bolder }
     box-sizing: border-box;
 
 }
-.top .title div.g-plusone{
+.g-plusone{
     float: right;
 }
 .content_header{
