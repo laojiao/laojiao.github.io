@@ -504,7 +504,7 @@ h5, h6          { font-weight: bolder }
 
 .top .g-plusone{
     position: absolute;
-    width: 100%;
+    top: 100px;
     right: 10%;
 }
 
