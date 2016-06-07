@@ -501,7 +501,9 @@ h5, h6          { font-weight: bolder }
     box-sizing: border-box;
 
 }
-
+.top .title div.g-plusone{
+    float: right;
+}
 .content_header{
     position: absolute;
     bottom: 0;
