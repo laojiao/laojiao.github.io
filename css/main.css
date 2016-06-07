@@ -502,11 +502,6 @@ h5, h6          { font-weight: bolder }
 
 }
 
-.top .title .g-plusone{
-    float: right;
-    margin-right: 40px;
-}
-
 .content_header{
     position: absolute;
     bottom: 0;
