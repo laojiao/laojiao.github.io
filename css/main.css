@@ -503,7 +503,7 @@ h5, h6          { font-weight: bolder }
 }
 
 .top .g-plusone{
-    display: block;
+    position: absolute;
     width: 100%;
     right: 10%;
 }
