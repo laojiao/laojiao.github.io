@@ -421,48 +421,60 @@ h5, h6          { font-weight: bolder }
 }
 
 /*  Inner Page  */
-#timeline{
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                left:30px;
-                top: 180px;
-                
-            }
-            #textout{
-                width:35px;
-                float: left;
-                height: 100%;
-                margin-left: 20px;
-                padding-top:10px;
-                cursor:pointer;
-            }
-            #lineout{
-                width:4px;
-                height: 100%;
-                float: left;
-                margin-left: 5px;
-            
-            }
-            .line{
-                width: 4px;
-                height: 50px;
-                background: #ccc; 
-                
-            }
-            .text{
-                width: 35px;
-                height: 50px;
-            }
-            #picture{
-                width: 1000px;
-                height: 500px;
-                margin-top: 50px;
-                margin-left:auto ;
-                margin-right:auto;
-                
-            }
-            
+.cd-horizontal-timeline .events-content {
+  position: relative;
+}
+.cd-horizontal-timeline .events-content li {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+.cd-horizontal-timeline .events-content li.selected {
+  /* visible event content */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+}
+.cd-horizontal-timeline .events-content li.enter-right, 
+.cd-horizontal-timeline .events-content li.leave-right {
+  animation-name: cd-enter-right;
+}
+.cd-horizontal-timeline .events-content li.enter-left, 
+.cd-horizontal-timeline .events-content li.leave-left {
+  animation-name: cd-enter-left;
+}
+.cd-horizontal-timeline .events-content li.leave-right, 
+.cd-horizontal-timeline .events-content li.leave-left {
+  animation-direction: reverse;
+}
+@keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
 .top{
     width: 100%;
     height: 350px;
