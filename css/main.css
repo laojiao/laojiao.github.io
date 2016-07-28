@@ -344,11 +344,11 @@ h5, h6          { font-weight: bolder }
     top: 0; 
     left: 0;
     background: #ffffff;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .main .work a:hover .caption{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .work .caption .work_title{
