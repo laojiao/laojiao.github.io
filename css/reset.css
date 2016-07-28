@@ -18,7 +18,14 @@
         vertical-align:baseline;
         background:transparent;
     }
+    
+    ol, ul {
+    list-style: none;
+    }
 
+    a:-webkit-any-link {
+    text-decoration: none;
+}
     body {
         line-height:1;
     }
